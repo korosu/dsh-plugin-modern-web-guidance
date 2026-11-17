@@ -1,0 +1,12 @@
+# Bundle patch for dsh-plugin-modern-web-guidance.
+# `dsh plugin --profile <p> add <this package>` appends the package to
+# dsh.profile.bundles and this row is composed on top. No manual editing needed.
+#
+# To disable WITHOUT uninstalling, add to your profile's cordis.patch.yml:
+#   - id: modern-web-guidance
+#     disabled: true
+# To remove completely:
+#   dsh plugin --profile web remove dsh-plugin-modern-web-guidance
+- insert:
+    - id: modern-web-guidance
+      name: dsh-plugin-modern-web-guidance
